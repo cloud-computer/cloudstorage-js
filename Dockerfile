@@ -15,9 +15,9 @@ RUN git clone https://github.com/emscripten-core/emsdk && \
   ./emsdk activate latest
 
 # Install cloudstorage-js
-RUN git clone https://github.com/lemourin/cloudstorage-js && \
+RUN git clone https://github.com/cloud-computer/cloudstorage-js && \
   cd cloudstorage-js && \
-  echo 'EMSDK_HOME=/opt/emsdk \n HOSTNAME=http://localhost:8000' > .env && \
+  echo 'EMSDK_HOME=/opt/emsdk\nHOSTNAME=http://localhost:8000' > .env && \
   npm install && \
   npm run build:all
 
