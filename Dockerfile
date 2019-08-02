@@ -6,7 +6,8 @@ RUN apt-get update -qq && \
   apt-get install -qq \
   git \
   nodejs \
-  npm
+  npm \
+  wget
 
 # Install emscripten sdk
 RUN git clone https://github.com/emscripten-core/emsdk && \
